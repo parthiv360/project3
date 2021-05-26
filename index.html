@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covid Tracker</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
 <body>
     <div class="heading">
-           <h1 style="color: white;">COVID-19 TRACKER</h1>
+           <h1 style="color: white; text-decoration: underline;">COVID-19 TRACKER</h1>
      
     </div>
-   <div class="card"> 
-    <div class="search">
-        <input type="text" class="search-bar" placeholder="Enter the location..">
-        <button ><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg></button>
-
-    </div>
+    <div class="card">
+        <div class="search">
+            <form id="entry">
+            <input type="text" id="inp" class="search-bar" placeholder="Enter the location.."></input>
+            <br>
+            <br>
+            <input type="submit"></input>
+        </form>
+        </div>
     </div>
     <br>
     <br>
@@ -26,32 +29,33 @@
     <div class="location">
         
         <h3 style="text-decoration: underline;">Current Location:</h3>
-        <h4 class="cur">WORLD</h4>
+        <h4 id="cur">-</h4>
     </div>
     <div class="Total" style="color: red;">
         <h3 style="text-decoration: underline;">Total Cases:</h3>
-        <h4 class="tot">1000000</h4>
+        <h4 id="tot">-</h4>
         
     </div>
-    <div class="vaccine" style="color: green;">
-        <h3 style="text-decoration: underline;">Vaccinated:</h3>
-        <h4 class="vac">50000</h4>
+    <div class="zone" style="color: green; font-size: larger;">
+        <h3 style="text-decoration: underline;">Zone:</h3>
+        <h4 id="zon">-</h4>
     </div>
     <br>
     <br>
     <br>
     <div class="active" style="color: blue;">
         <h3 style="text-decoration: underline;">Active Cases:</h3>
-        <h4 class="ac">250000</h4>
+        <h4 id="ac">-</h4>
     </div>
     <div class="death" style="color: gray;">
         <h3 style="text-decoration: underline;">Deaths:</h3>
-        <h4 class="dead">10000</h4>
+        <h4 id="dead">-</h4>
     </div>
     <div class="recovered" style="color: yellow;">
         <h3 style="text-decoration: underline;">Recovered:</h3>
-        <h4 class="rec">25000</h4>
+        <h4 id="rec">-</h4>
     </div>
     
 </body>
+<script src="script.js"></script>
 </html>
