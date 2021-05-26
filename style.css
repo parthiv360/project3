@@ -24,7 +24,7 @@ body{
     color: white;
     margin-top: 6px;
 }
-.vaccine{
+.zone{
     float: right;
     width: 30%;
     padding: 20px;
@@ -85,31 +85,14 @@ body{
     color: white;
     padding: 2em;
     border-radius: 30px;
-    width: 60%;
+    width: 80%;
     max-width: 420px;
     margin: 5em;
     
 }
-.search{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-button{
-    margin: 0.5em;
-    border-radius: 50%;
-    border: none;
-    height: 46px;
-    width: 56px;
-    outline: none;
-    background: #7c7c7c2b;
-    color: white;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-}
-button:hover{
-    background: #7c7c7c6b;
-}
+
+
+
 input{
     border: none;
     outline: none;
@@ -119,7 +102,7 @@ input{
     color: white;
     font-size: 120%;
     font-family: inherit;
-    width: 100%;
+   
 
 }
 .heading{
@@ -130,3 +113,4 @@ input{
   
     
 }
+
